@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace model
 {
+    //All plain
     public class CommonPlan : ModelBase
     {
         private string caption;
