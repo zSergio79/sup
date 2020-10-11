@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace model
 {
+    //Common abstract class for MVVM
     public abstract class ModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
