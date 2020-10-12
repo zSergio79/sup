@@ -9,6 +9,11 @@ namespace model
 {
     public class WorkItem : ModelBase
     {
+        private int code;
+        private string zakaz;
+        private string theme;
+        private string result;
+
         private int id;
         private string name;
         private DateTime start;
@@ -123,6 +128,55 @@ namespace model
                 if (status != value)
                 {
                     status = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public int Code
+        {
+            get => code;
+            set
+            {
+                if (code != value)
+                {
+                    code = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string Zakaz
+        {
+            get => zakaz;
+            set
+            {
+                if (zakaz != value)
+                {
+                    zakaz = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+        public string Theme
+        {
+            get => theme;
+            set
+            {
+                if (theme != value)
+                {
+                    OnPropertyChanged();
+                    theme = value;
+                }
+            }
+        }
+        public string Result
+        {
+            get => result;
+            set
+            {
+                if (result != value)
+                {
+                    result = value;
                     OnPropertyChanged();
                 }
             }

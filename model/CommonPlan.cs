@@ -16,14 +16,14 @@ namespace model
         public string Caption
         {
             get => caption;
-            set 
-                {
+            set
+            {
                 if (caption != value)
                 {
                     caption = value;
                     OnPropertyChanged();
                 }
-            } 
+            }
         }
         public ObservableCollection<WorkItem> Items
         {
